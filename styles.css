@@ -1,4 +1,43 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 70px;
+  align-items: center;
+}
+
+.header img{
+  width: 140px;
+}
+nav ul{
+  display: flex;
+  text-decoration: none;
+}
+nav ul li{
+
+  list-style: none;
+  text-decoration: none;
+  padding-right: 10vw;
+  color: black;
+}
+
+nav ul a li:hover{
+  color:rgb(41, 38, 38);
+  
+
+}
+a{
+ text-decoration: none;
+}
+
+.block1{
+  border: solid 1px;
+  background-color:#222831;
+  width: 500px;
+  height: 600px;
 }
