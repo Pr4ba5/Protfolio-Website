@@ -73,6 +73,7 @@ a{
   left: 22%;
   z-index: 2;
 }
+
 .hero-div img {
   width: 220px;
   height: 220px;
@@ -93,6 +94,111 @@ a{
   z-index: 3;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   right: 20%;
-  width: 20%;
+  max-width: 350px;
   top: 10%;
+}
+
+.right-side h1{
+  font-size: 5vw;
+  padding: 10px;
+}
+
+.right-side p{
+  font-size: 18px;
+  padding: 10px;
+}
+.buttons{
+  padding: 20px;
+}
+
+.buttons span{
+  padding: 4%;
+}
+
+.Projects-btn{
+  padding: 10px 20px;
+  border: solid black 1.5px;
+  border-radius: 24px;
+  letter-spacing: 0.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+  0 8px 15px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease-in-out, color 0.s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Projects-btn:hover{
+  background-color:#76ABAE;
+  color: white;
+  box-shadow: ease-in-out;
+  border: none;
+
+}
+.About-btn{
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  border-radius: 24px;
+  border: none;
+  color: white;
+  background-color: #76ABAE;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+              0 8px 15px rgba(0, 0, 0, 0.1); 
+ transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+
+}
+
+.About-btn:hover{
+  background-color: rgb(225, 225, 225);
+  border: solid 2px black;
+  color: black;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .heroo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .right-side {
+    position: relative;
+    order: 1;
+    width: 90%;
+    text-align: center;
+    max-width: none;
+    top: 0;
+    right: 0;
+  }
+
+  .right-side h1 {
+    font-size: 48px;
+  }
+
+  .block1 {
+    position: relative;
+    order: 3;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    z-index: 1;
+  }
+
+  .hero-div {
+    position: relative;
+    order: 2;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    padding-top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-div img {
+    width: 150px;
+    height: 150px;
+  }
 }
