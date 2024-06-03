@@ -62,19 +62,18 @@ a{
 .hero-div {
   position: absolute;
   background-color: #31363F;
-  display: flex;
-  justify-content: center;
   width: 25%;
   min-width: 250px;
   height: 500px;
   margin: 0 auto;
   padding-top: 20px;
   top: 5%;
-  left: 22%;
+  left: 24%;
   z-index: 2;
 }
 
 .hero-div img {
+  margin-left: 6%;
   width: 220px;
   height: 220px;
   border-radius: 50%;
@@ -88,12 +87,29 @@ a{
   height: 10%; 
   background-color: rgb(255, 255, 255);
 }
+.MY_NAME{
+font-family: 'Poppins', sans-serif;
+text-align: center;
+letter-spacing: 9px;
+padding: 20px;
+}
+hr{
+background-color: aliceblue;
+}
+.MY_POSITION{
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  font-family:'Poppins';
+  letter-spacing: 2px;
 
+}
 .right-side{
   position: absolute;
   z-index: 3;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  right: 20%;
+  right: 12%;
   max-width: 350px;
   top: 10%;
 }
@@ -122,15 +138,13 @@ a{
   letter-spacing: 0.2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
   0 8px 15px rgba(0, 0, 0, 0.1); 
-  transition: background-color 0.3s ease-in-out, color 0.s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: all 0.2s ease;
 }
 
 .Projects-btn:hover{
-  background-color:#76ABAE;
-  color: white;
-  box-shadow: ease-in-out;
-  border: none;
-
+  letter-spacing: 4px;
+  background-color: white;
+  color:#76ABAE;
 }
 .About-btn{
   padding: 10px 20px 10px 20px;
@@ -142,63 +156,25 @@ a{
   background-color: #76ABAE;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
               0 8px 15px rgba(0, 0, 0, 0.1); 
- transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+  transition: all 0.2s ease;
 
 }
 
 .About-btn:hover{
-  background-color: rgb(225, 225, 225);
-  border: solid 2px black;
-  color: black;
-  font-weight: normal;
+ letter-spacing: 6px;
+ background-color: white;
+ color:#76ABAE;
 }
-
-@media (max-width: 768px) {
-  .heroo {
+@media (max-width: 950px) {
+  .hero{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: auto;
+  }
+  .hero .right-side {
+    order: 1; 
   }
 
-  .right-side {
-    position: relative;
-    order: 1;
-    width: 90%;
-    text-align: center;
-    max-width: none;
-    top: 0;
-    right: 0;
-  }
-
-  .right-side h1 {
-    font-size: 48px;
-  }
-
-  .block1 {
-    position: relative;
-    order: 3;
-    width: 90%;
-    height: auto;
-    margin-top: 20px;
-    z-index: 1;
-  }
-
-  .hero-div {
-    position: relative;
-    order: 2;
-    width: 90%;
-    height: auto;
-    margin-top: 20px;
-    padding-top: 0;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-div img {
-    width: 150px;
-    height: 150px;
+  .hero .left-side {
+    order: 2; 
   }
 }
